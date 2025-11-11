@@ -1,5 +1,3 @@
-# 02-Challenge-Portfolio-Website by Jennifer B  
-
 # Challenge — Bootstrap Portfolio Site (From Scratch)
 
 **Goal:** Build a responsive personal portfolio using Flexbox and other CSS you know and deploy it on GitHub Pages.

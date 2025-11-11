@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jennifer's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Accessibility meta -->
+    <meta name="description" content="Portfolio website showcasing Jennifer's projects, background, and contact information.">
+</head>
+<body>
+    <!-- Add a skip link for screen readers and keyboard users -->
+    <a href="#maincontent" class="skip-link">Skip to main content</a>
+
+    <aside class="sidebar" aria-label="Sidebar Navigation">
+        <nav aria-label="Main menu">
+            <h2 class="menuTitle">Menu</h2>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="maincontent">
+        <header aria-labelledby="main-heading">
+            <h1 id="main-heading">Jennifer's Portfolio</h1>
+        </header>
+
+        <section aria-labelledby="about-heading">
+            <article class="boxWrap" id="about">
+                <h2 id="about-heading">About</h2>
+                <p>This section provides insight into who I am beyond my professional work. While I find great satisfaction in working with computers and developing technical solutions, I value maintaining a healthy work-life balance. During my free time, I prefer to disconnect from screens and engage in activities that promote physical wellness and mental clarity. I'm an avid reader who enjoys getting lost in a good book, and I'm passionate about staying active outdoors. Some of my favorite activities include roller skating, taking leisurely walks, spending quality time with my dog on our daily walks, and exploring local trails on bike rides. These hobbies help me recharge and bring fresh perspective to my work, while keeping me grounded and energized.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+            <article class="boxWrap" id="projects">
+                <h2 id="projects-heading">Projects</h2>
+<p>
+During my Full Stack Developer Bootcamp, I’ve completed several hands-on projects that demonstrate my ability to design, build, and deploy dynamic web applications. My work reflects a focus on clean code, responsive layouts, and user-centered design. Each project challenged me to apply both front-end and back-end skills while using modern technologies like HTML, CSS, JavaScript, Node.js, and React. I also integrated APIs, databases, and authentication systems to create full-featured applications that solve real problems and enhance user experience. Below are a few of the projects that highlight my technical growth and problem-solving skills. (This is made up wording and not real projects.)
+</p>
+
+<div class="project-grid" role="list">
+    <div class="project-card" role="listitem" tabindex="0" aria-label="Project One: Task Tracker App">
+        <p><strong>Task Tracker App</strong> – A productivity tool built with React and Express that allows users to organize daily tasks, set reminders, and store data using MongoDB.</p>
+    </div>
+
+    <div class="project-card" role="listitem" tabindex="0" aria-label="Project Two: Weather Dashboard">
+        <p><strong>Weather Dashboard</strong> – A responsive web app using the OpenWeather API to display real-time weather updates and five-day forecasts based on user location.</p>
+    </div>
+
+    <div class="project-card" role="listitem" tabindex="0" aria-label="Project Three: Recipe Finder">
+        <p><strong>Recipe Finder</strong> – A JavaScript-based application that lets users search recipes by ingredients, filter dietary preferences, and save favorites using local storage.</p>
+    </div>
+</div>
+
+                </div>
+            </article>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <form aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span aria-hidden="true">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Jennifer's Portfolio</p>
+    </footer>
+</body>
+</html>
